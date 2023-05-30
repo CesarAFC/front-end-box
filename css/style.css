@@ -68,11 +68,11 @@ main {
 }
 .background-card {
     height: 193px;
-    background-image: url('/img/849bfede3a5193c34ab8a00379e64fa2\ 1.png');
+    background-image: url('img/849bfede3a5193c34ab8a00379e64fa2\ 1.png');
 }
 .background-card-harley {
     height: 193px;
-    background-image: url('/img/849bfede3a5193c34ab8a00379e64fa2\ 1\ copy.png');
+    background-image: url('img/849bfede3a5193c34ab8a00379e64fa2\ 1\ copy.png');
 }
 footer {
     background-color: var(--primary);
