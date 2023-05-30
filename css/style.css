@@ -70,10 +70,12 @@ main {
 .background-card {
     height: 193px;
     background-image: url('../img/batman-back.png');
+    background-size: cover;
 }
 .background-card-harley {
     height: 193px;
     background-image: url('../img/harley-back.png');
+    background-size: cover;
 }
 footer {
     background-color: var(--primary);
