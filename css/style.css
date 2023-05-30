@@ -65,14 +65,15 @@ main {
     border: none;
     padding: 15px 30px;
     background-color: var(--primary);
+    cursor: pointer;
 }
 .background-card {
     height: 193px;
-    background-image: url('/img/batman-back.png');
+    background-image: url('../img/batman-back.png');
 }
 .background-card-harley {
     height: 193px;
-    background-image: url('/img/harley-back.png');
+    background-image: url('../img/harley-back.png');
 }
 footer {
     background-color: var(--primary);
