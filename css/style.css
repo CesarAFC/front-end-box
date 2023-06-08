@@ -8,7 +8,7 @@
 
 :root{
     --primary: #00669F;
-    --secondary: #1CD1B0;
+    --secondary: #D1891C;
 }
 .discount {
     background-color: var(--secondary);
@@ -16,6 +16,7 @@
 }
 header {
     background-color: var(--primary);
+    color: #fff;
     padding: 28px;
     position: sticky;
     top: 0;
@@ -27,6 +28,9 @@ main {
     /* height: 100vh; */
     text-align: center;
     padding: 70px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .card {
     width: 300px;
@@ -34,7 +38,7 @@ main {
     position: relative;
     background-color: #F3F3F3;
     border-radius: 16px 16px 0 0;
-    display: inline-block;
+    /* display: inline-block; */
 }
 .card-information {
     text-align: center;
@@ -48,6 +52,7 @@ main {
     margin-bottom: 20px;
 }
 .card > img {
+    height: 120px;
     border-radius: 50%;
     position: relative;
     top: -60px;
@@ -64,6 +69,7 @@ main {
 .card-information > button {
     border: none;
     padding: 15px 30px;
+    color: #fff;
     background-color: var(--primary);
     cursor: pointer;
 }
@@ -72,13 +78,67 @@ main {
     background-image: url('../img/batman-back.png');
     background-size: cover;
 }
-.background-card-harley {
+.background-card-wonder {
     height: 193px;
-    background-image: url('../img/harley-back.png');
+    border-radius: 16px 16px 0 0;
+    background-image: url('../img/wonderW-backgorund.png');
     background-size: cover;
 }
+.background-card-super {
+    height: 193px;
+    border-radius: 16px 16px 0 0;
+    background-image: url('../img/849bfede3a5193c34ab8a00379e64fa2\ 1.png');
+    background-size: cover;
+}
+.background-card-harley {
+    height: 193px;
+    border-radius: 16px 16px 0 0;
+    background-image: url('../img/newHarley-background.png');
+    background-size: cover;
+}
+
+
 footer {
     background-color: var(--primary);
     color: #fff;
     padding: 10px 28px 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+footer p {
+    text-align: center;
+}
+footer img {
+    width: 70px;
+    justify-self: end;
+    display: inline-block;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+}
+
+@media (max-width: 580px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        gap: 30px;
+    }
+
+    .card-information > p {
+        text-align: initial;
+    }
+    .card-to-hide {
+        display: none;
+    }
+}
+@media (max-width: 768px) {
+    main {
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 0;
+        gap: 30px;
+    }
 }
