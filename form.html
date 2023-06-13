@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <p class="discount">20% de descuento en todos los productos!</p>
+    <header>
+        <img src="./img/logo 1.svg" alt="Logo tienda">
+        <h1>Nombre Tienda</h1>
+    </header>
+
+    <section class="nav-bar">
+        <ul>
+            <li>Contacto</li>
+            <li>Registrarme</li>
+            <li>Ingresar</li>
+        </ul>
+    </section>
+
+    <section class="hero-card">
+        <h2>Añadí tu super!</h2>
+        <p>Agregá tu personaje favorito completando las opciones.</p>
+
+        <form action="">
+
+                <label>
+                    *Nombre
+                    <input name="nombre" id="nombre" type="text" required>
+                </label>
+
+            <div>
+                <label for="especie">*Especie</label>
+                <select name="especie" id="especie" required>
+                    <option value="" disabled selected>Especie</option>
+                    <option value="">Otro</option>
+                </select>
+            </div>
+            
+            <label>
+                Fecha
+                <input type="date">
+            </label>
+            
+            
+            <label>
+                Agregar Foto
+                <input type="file">
+            </label>
+            
+            <textarea 
+                placeholder="Descripcion"
+                name="description" 
+                id="description" 
+                cols="30" 
+                rows="10"></textarea>
+            
+
+            <div>
+            <fieldset>
+                <legend>Poderes</legend>
+                <label for="volar">
+                  <input type="checkbox" name="poderes" id="volar" value="volar" />
+                  Volar
+                </label>
+                <label for="inteligencia">
+                    <input type="checkbox" name="poderes" id="inteligencia" value="inteligencia" />
+                    SuperInteligencia
+                </label>
+                <label for="laser">
+                  <input type="checkbox" name="poderes" id="laser" value="laser" />
+                  Vista de rayo láser
+                </label>
+                <label for="billetera">
+                  <input type="checkbox" name="poderes" id="billetera" value="billetera" />
+                  Billetera gorda
+                </label>
+              </fieldset>
+
+              <hr>
+
+            <fieldset>
+                <legend>Tipo de personaje</legend>
+                <label for="dni" class="vert">
+                <input type="radio" name="tipo" id="dni" value="dni" />
+                Héroe / Heroina
+                </label>
+                <label for="cuil" class="vert">
+                <input type="radio" name="tipo" id="cuil" value="CUIL" />
+                Villano / Villana
+                </label>
+            </fieldset>
+        </div>
+
+            <button class="submit-form" type="submit">Añadir</button> 
+        </form>
+    </section>
+</body>
+</html>
