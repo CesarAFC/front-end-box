@@ -116,17 +116,6 @@ main {
     background-size: cover;
 }
 
-.plus-button {
-    position: fixed;
-    width: 50px;
-    top: 50vh;
-    right: 10px;
-}
-.plus-button:hover {
-    color: var(--primary-dark);
-}
-
-
 footer {
     background-color: var(--primary);
     color: #fff;
@@ -147,7 +136,48 @@ footer img {
     top: 10px;
 }
 
+.button-container {
+    position: fixed;
+    top: 50vh;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
 
+.plus {
+    display: inline-block;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+    width: 50px;
+    height: 50px;
+    background-color: var(--primary);
+    position: relative;
+}
+.plus:hover {
+    background-color: var(--primary-dark);
+}
+.plus::before {
+    content: " ";
+    position: absolute;
+    display: block;
+    background-color: rgb(255, 255, 255);
+    width: 5px;
+    left: 22.5px;
+    top: 14px;
+    bottom: 14px;
+}
+.plus::after {
+    content: " ";
+    position: absolute;
+    display: block;
+    background-color: rgb(255, 255, 255);
+    height: 5px;
+    top: 22.5px; 
+    left: 14px;
+    right: 14px;
+}
 
 .hero-card {
     width: 65vw;
