@@ -154,9 +154,11 @@ footer img {
     height: 50px;
     background-color: var(--primary);
     position: relative;
+    transition: 0.3s;
 }
 .plus:hover {
     background-color: var(--primary-dark);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .plus::before {
     content: " ";
@@ -270,6 +272,7 @@ fieldset label {
     font-size: 40px;
     padding: 0 160px;
     cursor: pointer;
+    transition: 0.3s;
 }
 .submit-form:hover {
     background-color: var(--primary-dark);
