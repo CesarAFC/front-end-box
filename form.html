@@ -65,37 +65,43 @@
             
 
             <div>
-            <fieldset>
+            <fieldset class="checkmarks">
                 <legend>Poderes</legend>
-                <label for="volar">
+                <label for="volar" class="new-check">
+                    Volar
                   <input type="checkbox" name="poderes" id="volar" value="volar" />
-                  Volar
+                  <span class="checkmark-style checkmark"></span>
                 </label>
-                <label for="inteligencia">
-                    <input type="checkbox" name="poderes" id="inteligencia" value="inteligencia" />
+                <label for="inteligencia" class="new-check">
                     SuperInteligencia
+                    <input type="checkbox" name="poderes" id="inteligencia" value="inteligencia" />
+                    <span class="checkmark-style checkmark"></span>
                 </label>
-                <label for="laser">
+                <label for="laser" class="new-check">
+                    Vista de rayo láser
                   <input type="checkbox" name="poderes" id="laser" value="laser" />
-                  Vista de rayo láser
+                  <span class="checkmark-style checkmark"></span>
                 </label>
-                <label for="billetera">
+                <label for="billetera" class="new-check">
+                    Billetera gorda
                   <input type="checkbox" name="poderes" id="billetera" value="billetera" />
-                  Billetera gorda
+                  <span class="checkmark-style checkmark"></span>
                 </label>
               </fieldset>
 
               <hr>
 
-            <fieldset>
+            <fieldset class="checkmarks">
                 <legend>Tipo de personaje</legend>
-                <label for="dni" class="vert">
-                <input type="radio" name="tipo" id="dni" value="dni" />
-                Héroe / Heroina
+                <label for="hero" class="new-check">
+                    Héroe / Heroina
+                    <input type="radio" name="personaje" id="hero" value="hero" />
+                    <span class="radio-type checkmark"></span>
                 </label>
-                <label for="cuil" class="vert">
-                <input type="radio" name="tipo" id="cuil" value="CUIL" />
-                Villano / Villana
+                <label for="villano" class="new-check">
+                    Villano / Villana
+                    <input type="radio" name="personaje" id="villano" value="villano" />
+                    <span class="radio-type checkmark"></span>
                 </label>
             </fieldset>
         </div>

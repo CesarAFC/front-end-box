@@ -197,7 +197,7 @@ footer img {
     font-weight: 300;
     padding: 20px 0;
 }
-.hero-card h2, p{
+.hero-card h2, .hero-card p{
     text-align: center;
 }
 form {
@@ -234,6 +234,10 @@ select {
     padding: 8px 95px 8px 8px;
     background-color: #CECECE;
     border-radius: 5px;
+    transition: 0.3s;
+}
+.hero-card input::file-selector-button:hover {
+    background-color: #949292;
 }
 #description {
     width: 340px;
@@ -278,6 +282,82 @@ fieldset label {
     background-color: var(--primary-dark);
     color: #fff;
 }
+
+/* AGREGANDO ESTILOS A CHECKMARKS */
+.new-check {
+        display: block;
+        position: relative;
+        padding-left: 35px;
+        margin-bottom: 12px;
+        cursor: pointer;
+        font-size: 22px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+} 
+
+.checkmarks input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+
+.checkmark-style {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 5px;
+  }
+
+  .new-check:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  .new-check input:checked ~ .checkmark {
+    background-color: #2196F3;
+  }
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  .new-check input:checked ~ .checkmark:after {
+    display: block;
+  }
+  .new-check .checkmark-style:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+.radio-type {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+.new-check .radio-type:after {
+    top: 9px;
+   left: 9px;
+   width: 8px;
+   height: 8px;
+   border-radius: 50%;
+   background: white;
+}
+
 @media (max-width: 580px) {
     main {
         flex-direction: column;
@@ -300,5 +380,8 @@ fieldset label {
         align-items: center;
         padding: 0;
         gap: 30px;
+    }
+    .submit-form {
+        padding: 0 70px;
     }
 }
